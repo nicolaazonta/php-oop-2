@@ -1,7 +1,11 @@
 <?php
 
-class computer{
-    public function __construct(protected string $brand, protected string $model, protected string $alimentation)
+class Computer{
+
+    protected $brand;
+    protected $model;
+    protected $alimentation;
+    public function __construct(string $brand, string $model, string $alimentation)
     {
         $this->brand = $brand;
         $this->model = $model;

@@ -1,12 +1,12 @@
 <?php
 
 require_once __DIR__ . '/Computer.php';
-require_once __DIR__ . '/../Traits/Weightable.php';
 
-class desktop extends computer{
-  
+class Desktop extends Computer
+{
+
     use Weightable;
-    
+
     public function getType()
     {
         return 'desktop';
