@@ -11,7 +11,7 @@ require_once __DIR__ . '/database/db.php';
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>OOP-2</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,10 +31,10 @@ require_once __DIR__ . '/database/db.php';
                
                 <div class="col-6 g-3">
                     <div class="card p-1">
-                        <h1><?= $computer->brand ?></h1>
-                        <h5><?= $computer->model ?></h5>
-                        <p><?= $computer->battery ?></p>
-                        <p><?= $computer->name ?></p>
+                        <h1><?= $computer->getBrand() ?></h1>
+                        <h5><?= $computer->getModel() ?></h5>
+                        <p><?= $computer->getAlimentation() ?></p>
+                        <p><?= $computer->getType() ?></p>
                     </div>
                 </div>
 

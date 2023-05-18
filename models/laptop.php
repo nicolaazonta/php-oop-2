@@ -1,9 +1,12 @@
 <?php
 
+require_once __DIR__ . '/../traits/Weightable.php';
+
 class laptop extends computer{
-    public function __construct($brand, $model, $battery,public string $name)
+    
+
+    public function getType()
     {
-        parent::__construct($brand, $model, $battery);
-        $this->name = $name;
+        return 'laptop';
     }
 }
