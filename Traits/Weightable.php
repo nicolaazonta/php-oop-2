@@ -1,12 +1,12 @@
 <?php
-trait weightable
+trait Weightable
 {
     public $weight;
 
-    public function getweight(){
+    public function getWeight(){
         return $this->weight;
     }
-    public function setweight($weight, $unit){
+    public function setWeight($weight, $unit){
         $this->weight= $weight . $unit;
     }
 }

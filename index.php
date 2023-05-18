@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/models/computer.php';
-require_once __DIR__ . '/models/laptop.php';
-require_once __DIR__ . '/models/desktop.php';
-require_once __DIR__ . '/database/db.php';
+require_once __DIR__ . '/Models/Computer.php';
+require_once __DIR__ . '/Models/Laptop.php';
+require_once __DIR__ . '/Models/Desktop.php';
+require_once __DIR__ . '/Database/Db.php';
 
 ?>
 
@@ -34,6 +34,7 @@ require_once __DIR__ . '/database/db.php';
                         <h1><?= $computer->getBrand() ?></h1>
                         <h5><?= $computer->getModel() ?></h5>
                         <p><?= $computer->getAlimentation() ?></p>
+                        <p><?= $computer->getWeight() ?></p>
                         <p><?= $computer->getType() ?></p>
                     </div>
                 </div>
